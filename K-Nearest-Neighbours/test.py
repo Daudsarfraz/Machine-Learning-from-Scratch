@@ -1,5 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from
-import sklearn import datasets # Importing datasets
-import m
+from sklearn import datasets # Importing datasets
+from matplotlib.colors import ListedColormap
+from sklearn.model_selection import train_test_split
+cmap = ListedColormap(['#FF0000','#00FF00','#0000FF'])
+
+iris_data = datasets.load_iris()
+X, y = iris_data.data, iris_data.target
+print(X) 
+
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 1333)
+
